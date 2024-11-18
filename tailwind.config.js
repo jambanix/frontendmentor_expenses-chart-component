@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {},
     colors: {
-      "white": "#FFFFFF",
-      "card-white": "#FFFBF6",
-      "cream-bg": "#F8E9DD",
-      "medium-brown": "#92857A",
+      "white": "#ffffff",
+      "card-white": "#fffbf6",
+      "cream-bg": "#f8e9dd",
+      "medium-brown": "#92857a",
       "dark-brown": "#382314",
-      "cyan": "#76B5BC",
-      "red": "#EC755D"
+      "cyan": "#76b5bc",
+      "red": "#ec75dd"
     }
   },
   plugins: [],
