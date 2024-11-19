@@ -20,7 +20,7 @@ export const Summary = ({ data }) => {
     <section className="bg-white w-full rounded-lg flex flex-col p-4 md:p-8 gap-6" style={{minHeight: `${sectionHeight}px`}}>
       <h2 className="text-xl md:text-3xl text-dark-brown font-bold">Spending - Last 7 days</h2>
       <Chart data={data} maxAmount={maxAmount} containerHeight={containerHeight}/>
-      <hr />
+      <hr className="text-dark-brown/15"/>
       <div className="flex flex-col justify-center md:gap-2">
         <p className="text-medium-brown">Total this month</p>
         <div className="flex justify-between items-center">
