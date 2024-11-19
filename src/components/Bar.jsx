@@ -6,6 +6,7 @@ export const Bar = ({ data, height }) => {
 
   const amount = data.amount;
   const [isHovering, setIsHovering] = useState(false);
+  const [displayHeight, setDisplayHeight] = useState(0);
 
   const infoBubbleClass = isHovering || data.day === today ? "visible opacity-100" : "hidden opacity-0"
 
@@ -21,6 +22,17 @@ export const Bar = ({ data, height }) => {
     }
   }
 
+  // Load in effect
+  useEffect(() => {
+    let timer;
+    if (displayHeight !== height) {
+      timer = setTimeout(() => {
+        setDisplayHeight(prev => prev + 1);
+      }, 1);
+    }
+    return () => clearTimeout(timer);
+  }, [displayHeight])
+
 
   return (
     <div className="flex flex-col h-full justify-end items-center w-[20px] sm:w-[35px] md:w-[55px] gap-2">
@@ -29,7 +41,7 @@ export const Bar = ({ data, height }) => {
       <div className={`flex items-center justify-center rounded-lg bg-dark-brown text-white p-2 text-xs mb-2 ${infoBubbleClass} transition-opacity font-semibold`}>£{amount}</div>
 
       {/* Bar */}
-      <div className={`${barColourClass()} rounded-lg w-full transition-all`} onMouseOver={() => setIsHovering(true)} onMouseOut={() => setIsHovering(false)} style={{height: `${height || 1}px`}}></div>
+      <div className={`${barColourClass()} rounded-lg w-full transition-all`} onMouseOver={() => setIsHovering(true)} onMouseOut={() => setIsHovering(false)} style={{height: `${displayHeight}px`}}></div>
 
       {/* Day label */}
       <p className="text-medium-brown">{data.day}</p>
