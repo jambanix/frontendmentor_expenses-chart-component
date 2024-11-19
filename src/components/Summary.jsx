@@ -14,10 +14,10 @@ export const Summary = ({ data }) => {
   const containerHeight = screenWidth === "desktop" ? CHART_CONTAINER_HEIGHT : CHART_CONTAINER_HEIGHT - 50;
 
   // Section height based on screen size
-  const sectionHeight = screenWidth === "desktop" ? 500 : 450
+  const sectionHeight = screenWidth === "desktop" ? 450 : 400
 
   return (
-    <section className="bg-white w-full rounded-lg flex flex-col p-4 md:p-8 gap-6" style={{minHeight: `${sectionHeight}px`}}>
+    <section className="bg-card-white w-full rounded-xl flex flex-col p-4 md:p-8 gap-6" style={{minHeight: `${sectionHeight}px`}}>
       <h2 className="text-xl md:text-3xl text-dark-brown font-bold">Spending - Last 7 days</h2>
       <Chart data={data} maxAmount={maxAmount} containerHeight={containerHeight}/>
       <hr className="text-dark-brown/15"/>

@@ -1,6 +1,6 @@
 
 // for desktop
-export const CHART_CONTAINER_HEIGHT = 400;
+export const CHART_CONTAINER_HEIGHT = 350;
 
 // Leave some room for the pop up amount to stop the bar shrinking on hover
 const BUFFER = (screenSize="desktop") => screenSize === "desktop" ? 100 : 50

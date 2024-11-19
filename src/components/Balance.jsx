@@ -1,8 +1,8 @@
 
 export const Balance = () => {
   return (
-    <section className="bg-red w-full rounded-lg flex justify-between px-4 py-2 md:px-8 md:py-6 text-white items-center">
-      <div className="flex flex-col gap-2">
+    <section className="bg-red w-full rounded-xl flex justify-between px-4 py-2 md:px-8 md:py-6 text-white items-center">
+      <div className="flex flex-col gap-1">
         <h3>My Balance</h3>
         <p className="text-2xl md:text-4xl font-semibold">£921.48</p>
       </div>
