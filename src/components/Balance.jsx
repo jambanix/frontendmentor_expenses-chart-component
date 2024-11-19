@@ -8,8 +8,7 @@ export const Balance = () => {
       </div>
       <div className="bg-dark-brown h-12 w-12 rounded-full relative">
         <div className="border-2 border-white h-12 w-12 absolute rounded-full -left-5"></div>
-      </div>
-      
+      </div> 
     </section>
   )
 }

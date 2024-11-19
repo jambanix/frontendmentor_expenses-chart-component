@@ -13,7 +13,7 @@ export default {
       "medium-brown": "#92857a",
       "dark-brown": "#382314",
       "cyan": "#76b5bc",
-      "red": "#ec75dd"
+      "red": "#ec755d"
     }
   },
   plugins: [],
