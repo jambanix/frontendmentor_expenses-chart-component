@@ -14,14 +14,12 @@ function App() {
   }, []);
 
   return (
-
     <>
-      <main className="bg-cream-bg flex items-center justify-center h-screen w-full">
-        <div className="flex flex-col gap-4 w-[90%] max-w-[540px] min-w-[320px]">
+      <main className="bg-cream-bg flex items-center justify-center min-h-screen w-full">
+        <div className="flex flex-col gap-6 w-[90%] max-w-[560px] min-w-[320px]">
           <Balance />
           <Summary data={data} />
         </div>
-        
       </main>
     </>
   )

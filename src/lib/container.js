@@ -1,11 +1,10 @@
 
 // for desktop
-export const CHART_CONTAINER_HEIGHT = 426;
+export const CHART_CONTAINER_HEIGHT = 400;
 
 // Leave some room for the pop up amount to stop the bar shrinking on hover
-const BUFFER = 75;
+const BUFFER = 100;
 
-console.log("CHART_CONTAINER HEIGHT ", CHART_CONTAINER_HEIGHT)
 
 // Calculate the height of the bar.
 // Highest amount uses full size then everything else is relative to that
