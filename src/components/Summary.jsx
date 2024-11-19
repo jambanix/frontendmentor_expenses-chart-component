@@ -11,10 +11,10 @@ export const Summary = ({ data }) => {
   const maxAmount = Math.max(...data.map(item => item.amount));
 
   // Container height for the chart based on screen size
-  const containerHeight = screenWidth === "desktop" ? CHART_CONTAINER_HEIGHT : CHART_CONTAINER_HEIGHT - 100;
+  const containerHeight = screenWidth === "desktop" ? CHART_CONTAINER_HEIGHT : CHART_CONTAINER_HEIGHT - 75;
 
   // Section height based on screen size
-  const sectionHeight = screenWidth === "desktop" ? 500 : 400
+  const sectionHeight = screenWidth === "desktop" ? 500 : 425
 
   return (
     <section className="bg-white w-full rounded-lg flex flex-col p-4 md:p-8 gap-6" style={{minHeight: `${sectionHeight}px`}}>
